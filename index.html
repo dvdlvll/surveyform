@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div>
+            <h1 id="title">title or something</h1>
+            <p>description of survey form</p>
+        </div>
+
+        <div>
+            <form id="survey-form">
+                <label id="name-label">name</label>
+                <input type="text" id="name" placeholder="firstname lastname">
+
+                <br>
+
+                <label id="email-label">email</label>
+                <input type="email" id="email" placeholder="name@email.com">
+
+                <br>
+
+                <label id="number-label">number</label>
+                <input type="text" pattern="\d*" minlength="11" maxlength="11" placeholder="09123456789">
+
+                <br>
+
+                <label id="dropdown-label">list</label>
+                <select name="dropdown" id="dropdown">
+                    <option name="dropdown" value="1">1</option>
+                    <option name="dropdown" value="2">2</option>
+                    <option name="dropdown" value="3">3</option>
+                </select>
+
+                <br>
+
+                <input type="radio" name="radio" id="radio1"><label class="radio-label">radio1</label>
+                <br>
+                <input type="radio" name="radio" id="radio2"><label class="radio-label">radio2</label>
+                <br>
+                <input type="radio" name="radio" id="radio3"><label class="radio-label">radio3</label>
+
+                <br>
+
+                <input type="checkbox" name="checkbox" id="checkbox1"><label class="checkbox-label">checkbox1</label>
+                <br>
+                <input type="checkbox" name="checkbox" id="checkbox2"><label class="checkbox-label">checkbox2</label>
+                <br>
+                <input type="checkbox" name="checkbox" id="checkbox3"><label class="checkbox-label">checkbox3</label>
+
+                <br>
+
+                <label id="textarea-label">textarea</label>
+                <textarea name="textarea" id="textarea"></textarea>
+
+                <br>
+
+                <input type="submit" name="button" value="send">
+            </form>
+        </div>
+    </body>
+</html>
