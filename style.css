@@ -62,6 +62,25 @@ body {
     width: 60%;
 }
 
+#thankyou-container {
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: 3%;
+    background-color: var(--white);
+    height: 100%;
+    width: 60%;
+}
+
+#thankyou {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-top: 5px;
+}
+
 #title {
     font-family: "Oswald", sans-serif;
     font-size: 3rem;

@@ -16,7 +16,7 @@
             <div id="main">
                 <div id="sidebar"></div>
                 <div id="form-container">
-                <form id="survey-form" action="#" method="get">
+                <form id="survey-form" action="thankyou.html" method="get">
                     <div class="form-block">
                         <h1 id="title">TIME FOR A SURVEY, AGENT</h1>
                         <p id="disclaimer">SURVEY FORM PROJECT BY DAVE LAVILLA. CODER IS NOT ASSOCIATED WITH VALORANT OR RIOT GAMES.</p>
@@ -29,19 +29,19 @@
                     <div class="form-block">
                         <label for="name" id="name-label">FULL NAME*</label>
                         <br>
-                        <input type="text" id="name" placeholder="ex: John Doe" required>
+                        <input type="text" id="name" name="name" placeholder="ex: John Doe" required>
                     </div>
 
                     <div class="form-block">
                         <label for="email" id="email-label">EMAIL*</label>
                         <br>
-                        <input type="email" id="email" placeholder="ex: johndoe@site.com" required>
+                        <input type="email" id="email" name="email" placeholder="ex: johndoe@site.com" required>
                     </div>
 
                     <div class="form-block">
                         <label for="number" id="number-label">AGE*</label>
                         <br>
-                        <input type="number" id="number" min="16" max="120" placeholder="ex: 23" required>  
+                        <input type="number" id="number" name="age" min="16" max="120" placeholder="ex: 23" required>  
                     </div>
 
                     <div class="form-block">
@@ -88,7 +88,7 @@
                     <div class="form-block">
                         <label for="hours">How many hours do you spend playing Valorant in a day?</label>
                         <br>
-                        <input type="number" id="hours" min="0" max="24" placeholder="1" required>  
+                        <input type="number" id="hours" name="hours" min="0" max="24" placeholder="1" required>  
                     </div>
 
                     <div class="form-block">
@@ -291,7 +291,6 @@
                 </form>
                 </div>
             </div>
-
         </div>
     </body>
 </html>
