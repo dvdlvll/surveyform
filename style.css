@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&family=Open+Sans&family=Oswald:wght@600&display=swap');
+
+:root {
+    --primary-color: rgb(255, 70, 85);
+    --secondary-color: rgb(21, 39, 60);
+    --black: rgb(17, 17, 17);
+    --grey: rgb(41, 41, 41);
+    --white: rgb(236, 232, 225);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("images/bg.png");
+    background-color: var(--black);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 70vw;
+    margin: 5vh auto;
+    height: 85vh;
+    background-color: var(--white);
+}
+
+#header {
+    background-color: var(--primary-color);
+    height: 1%;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: var(--white);
+    height: 100%;
+    width: 100%;
+}
+
+#sidebar {
+    background-image: url(https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8353cbd513234cc6/6261bc2e1574214ead420a52/Valorant_2022_E4A3_PlayVALORANT_PlayValorantHomepage.jpg);
+    background-size: auto 100%;
+    background-position: 63% 0%;
+    background-repeat: no-repeat;
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    height: 100%;
+    width: 40%;
+}
+
+#form-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: var(--white);
+    height: 100%;
+    width: 60%;
+}
+
+#title {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    color: var(--black);
+    margin-top: 5px;
+}
+
+#disclaimer {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 0.5rem;
+    color: var(--black);
+    word-spacing: 10px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.form-block {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 16px;
+    color: var(--black);
+    width: 90%;
+    margin-left: 6%;
+    margin-bottom: 3%;
+}
+
+.form-section {
+    width: 50%;
+    margin-left: 6%;
+    margin-bottom: 1%;
+    margin-top: 4%;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.form-section h2 {
+    font-family: "Maven Pro", "Arial", sans-serif;
+    letter-spacing: -0.5px;
+    font-size: 1.5rem;
+    font-style: bold;
+    color: var(--primary-color);
+
+}
+
+.checkbox-char {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-char div {
+    margin-right: 5%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--white);
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color)
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=text], input[type=email], select, textarea {
+    padding: 10px;
+    margin: 7px 0;
+    width: 70%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: thin;
+    background-color: transparent;
+}
+
+input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus {
+    border-color: var(--primary-color);
+    background-color: transparent;
+}
+
+input[type=text]:hover, input[type=email]:hover, select:hover, textarea:hover {
+    border-color: var(--primary-color);
+}
+
+input[type=number] {
+    padding: 10px;
+    margin: 7px 0;
+    width: 30%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: thin;
+    background-color: transparent;
+    outline: none;
+}
+  
+input[type=number]:focus {
+    border-color: var(--primary-color);
+    background-color: var(--white);
+}
+  
+input[type=number]:hover {
+    border-color: var(--primary-color);
+}
+
+input[type='radio'] {
+    border: 0px;
+    height: 10px;
+    accent-color: var(--primary-color);
+}
+
+input[type='checkbox'] {
+    accent-color: var(--primary-color);
+}
+
+input[type=submit] {
+    position: relative;
+    background-color: var(--primary-color);
+    width: fit-content;
+    border: none;
+    color: var(--white);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+    cursor: pointer;
+  }
