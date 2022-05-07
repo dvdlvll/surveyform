@@ -1,0 +1,78 @@
+@import 'input.scss';
+
+%border-color-primary {
+    border-color: $primary-color;
+}
+
+%accent-color-primary {
+    accent-color: $primary-color;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=text], input[type=email], select, textarea {
+    padding: 10px;
+    margin: 7px 0;
+    width: 70%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: thin;
+    background-color: transparent;
+}
+
+input[type=text]:hover, input[type=email]:hover, select:hover, textarea:hover {
+    @extend %border-color-primary;
+}
+
+input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus {
+    @extend %border-color-primary;
+    background-color: transparent;
+}
+
+input[type=number] {
+    padding: 10px;
+    margin: 7px 0;
+    width: 30%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: thin;
+    background-color: transparent;
+    outline: none;
+}
+  
+input[type=number]:focus {
+    @extend %border-color-primary;
+    background-color: var(--white);
+}
+  
+input[type=number]:hover {
+    @extend %border-color-primary;
+}
+
+input[type='radio'] {
+    border: 0px;
+    height: 10px;
+    @extend %accent-color-primary;
+}
+
+input[type='checkbox'] {
+    @extend %accent-color-primary;
+}
+
+input[type=submit] {
+    position: relative;
+    background-color: $primary-color;
+    width: fit-content;
+    border: none;
+    color: $white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: $oswald;
+    font-weight: bolder;
+    font-size: 2em;
+    cursor: pointer;
+  }

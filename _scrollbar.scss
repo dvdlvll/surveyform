@@ -1,0 +1,10 @@
+@import 'input';
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: $white;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: $secondary-color;
+}

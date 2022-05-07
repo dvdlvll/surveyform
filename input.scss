@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&family=Open+Sans&family=Oswald:wght@600&display=swap');
+
+$primary-color: rgb(255, 70, 85);
+$secondary-color: rgb(21, 39, 60);
+$black: rgb(17, 17, 17);
+$grey: rgb(41, 41, 41);
+$white: rgb(236, 232, 225);
+
+$oswald: "Oswald", sans-serif;
+$open-sans: "Open Sans", "Arial", sans-serif;
+$maven-pro:  "Maven Pro", "Arial", sans-serif;
+
+$background: url("images/bg.png");
+$sidebar: url("https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8353cbd513234cc6/6261bc2e1574214ead420a52/Valorant_2022_E4A3_PlayVALORANT_PlayValorantHomepage.jpg");
+
+
+%default-display-overflow {
+    display: flex;
+    overflow: hidden;
+}
+
+%default-display-overflow-y {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: $background;
+    background-color: $black;
+}
+
+#container {
+    @extend %default-display-overflow;
+    flex-direction: column;
+    background-color: $white;
+    margin: 5vh auto;
+    height: 85vh;
+    width: 70vw;
+}
+
+#main {
+    @extend %default-display-overflow;
+    flex-direction: row;
+    background-color: $white;
+    height: 100%;
+    width: 100%;
+}
+
+#sidebar {
+    @extend %default-display-overflow;
+    background-image: $sidebar;
+    background-size: auto 100%;
+    background-position: 63% 0%;
+    background-repeat: no-repeat;
+    background-color: $secondary-color;
+    height: 100%;
+    width: 40%;
+}
+
+#form-container {
+    @extend %default-display-overflow-y;
+    background-color: $white;
+    height: 100%;
+    width: 60%;
+}
+
+#thankyou-container {
+    @extend #form-container;
+    margin-left: 3%;
+}
+
+#title {
+    font-family: $oswald;
+    font-size: 3rem;
+    color: $black;
+    margin-top: 5px;
+}
+
+#thankyou {
+    @extend #title;
+    text-transform: uppercase;
+}
+
+#disclaimer {
+    font-family: $open-sans;
+    font-size: 0.5rem;
+    color: $black;
+    word-spacing: 10px;
+}
+
+.form-block {
+    font-family: $open-sans;
+    font-size: 16px;
+    color: $black;
+    width: 90%;
+    margin-left: 6%;
+    margin-bottom: 3%;
+}
+
+.form-section {
+    width: 50%;
+    margin-left: 6%;
+    margin-bottom: 1%;
+    margin-top: 4%;
+    border-bottom: 2px solid $secondary-color;
+
+    h2 {
+        font-family: $maven-pro;
+        letter-spacing: -0.5px;
+        font-size: 1.5rem;
+        font-style: bold;
+        color: $primary-color;
+    }
+}
