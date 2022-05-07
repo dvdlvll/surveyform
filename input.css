@@ -1,4 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&family=Open+Sans&family=Oswald:wght@600&display=swap");
+::-webkit-scrollbar {
+  width: 10px;
+  background: #ece8e1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #15273c;
+}
+
+input[type=text]:hover, input[type=email]:hover, select:hover, textarea:hover, input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus, input[type=number]:focus, input[type=number]:hover {
+  border-color: #ff4655;
+}
+
+input[type='radio'], input[type='checkbox'] {
+  accent-color: #ff4655;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=text], input[type=email], select, textarea {
+  padding: 10px;
+  margin: 7px 0;
+  width: 70%;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  background-color: transparent;
+}
+
+input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus {
+  background-color: transparent;
+}
+
+input[type=number] {
+  padding: 10px;
+  margin: 7px 0;
+  width: 30%;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  background-color: transparent;
+  outline: none;
+}
+
+input[type=number]:focus {
+  background-color: var(--white);
+}
+
+input[type='radio'] {
+  border: 0px;
+  height: 10px;
+}
+
+input[type=submit] {
+  position: relative;
+  background-color: #ff4655;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  color: #ece8e1;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  font-size: 2em;
+  cursor: pointer;
+}
+
 #container, #main, #sidebar {
   display: -webkit-box;
   display: -ms-flexbox;

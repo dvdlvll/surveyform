@@ -1,4 +1,12 @@
-@import 'input.scss';
+$primary-color: rgb(255, 70, 85);
+$secondary-color: rgb(21, 39, 60);
+$black: rgb(17, 17, 17);
+$grey: rgb(41, 41, 41);
+$white: rgb(236, 232, 225);
+
+$oswald: "Oswald", sans-serif;
+$open-sans: "Open Sans", "Arial", sans-serif;
+$maven-pro:  "Maven Pro", "Arial", sans-serif;
 
 %border-color-primary {
     border-color: $primary-color;
